@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" /> -->
+    <style>
+        .container-fluid {
+            padding: 80px 120px;
+        }
+        
+        p {
+            font-size: 32px;
+            font-family: monospace;
+        }
+        
+        img {
+            cursor: pointer;
+        }
+        
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, rgb(203, 42, 218) 50%, #09f 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+        
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+        
+        .bg3 {
+            animation-duration: 5s;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: .25em;
+            box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+            box-sizing: border-box;
+            left: 50%;
+            padding: 10vmin;
+            position: fixed;
+            text-align: center;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        h1 {
+            font-family: monospace;
+            font-size: 60px;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(25%);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container-fluid {
+                padding: 40px 80px;
+            }
+            p {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            img {
+                margin: auto;
+                padding: auto;
+                height: 200px;
+                width: 200px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .container-fluid {
+                padding: 50px 90px;
+            }
+            p {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            img {
+                margin: auto;
+                padding: auto;
+                height: 160px;
+                width: 160px;
+            }
+            .col-sm-4 hover-zoom {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .container-fluid {
+                padding: 50px 90px;
+            }
+            p {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            img {
+                margin: auto;
+                padding: auto;
+                height: 200px;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+
+    <div class="container-fluid text-center">
+        <h1>Select your Theme</h1>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-4 hover-zoom">
+                <br>
+                <br>
+                <p><strong>Harry Potter</strong></p><br>
+                <img src="images/Hp-back-photo.jpeg" alt="Random Name" width="270" height="270">
+            </div>
+
+            <div class="col-sm-4 hover-zoom">
+                <br><br>
+                <p><strong>Avengers</strong></p><br>
+                <img src="images/avengers-back-photo.jpg" alt="Random Name" width="270" height="270">
+            </div>
+            <div class="col-sm-4 hover-zoom">
+                <br><br>
+                <p><strong>Friends</strong></p><br>
+                <a href="level.html">
+                    <img src="images/friends-back-photo.jpg" alt="Random Name" width="270" height="270">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
